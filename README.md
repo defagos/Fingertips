@@ -1,6 +1,6 @@
 # Fingertips: Presentation mode for your iOS app
 
-Fingertips is a small library (in fact a category of `UIWindow`) meant for presentations from iOS devices that shows all touches and gestures so that the audience can see them. 
+Fingertips is a small library meant for presentations from iOS devices that shows all touches and gestures so that the audience can see them. 
 
 This is only designed for the iPad 2 and iPhone 4S (or later), which feature [hardware video mirroring](http://www.apple.com/ipad/features/airplay/) support. **This library does not do the mirroring for you!**
 
@@ -9,6 +9,12 @@ Just use the `fingerTipSettings` property added to `UIWindow` to access Fingerti
 Here's a [demo video](http://vimeo.com/22136667).
 
 Fingertips requires iOS 5.0 or greater and ARC. 
+
+## About this fork
+
+This repository is a fork of the original [repository](https://github.com/mapbox/Fingertips), which turns Fingertips into a `UIWindow` category. The original Fingertips namely requires you to replace the window of your application, which is impractical if this window is already an instance of a `UIWindow` subclass, or if you do not instantiate it yourself.
+
+Because of the use of method swizzling, it was decided not to merge back this version of Fingertips into the official repository. I will still maintain this repository as a fork, and try to merge back changes from the official repository when possible.
 
 ## Configuration
 
